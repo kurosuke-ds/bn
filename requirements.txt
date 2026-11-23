@@ -1,0 +1,5 @@
+# Python packages (pip). One package per line.
+numpy
+pandas
+matplotlib
+pgmpy

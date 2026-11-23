@@ -1,0 +1,4 @@
+# R packages (CRAN). One package name per line.
+# Installed into the R library of the selected Conda environment.
+bnlearn
+ggplot2
