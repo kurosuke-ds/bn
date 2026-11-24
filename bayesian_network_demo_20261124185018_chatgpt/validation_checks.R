@@ -1,0 +1,36 @@
+library(bnlearn)
+source('bn_functions.R',encoding='UTF-8')
+expect_error <- function(expr) {
+  observed <- tryCatch({force(expr);FALSE},error=function(e)TRUE)
+  stopifnot(observed)
+}
+# 入力検査と、ordered factorを通常factorにする動作。
+x <- data.frame(A=rep(c('高','中','低'),4),B=rep(c('低','中','高'),4),check.names=FALSE)
+x$A <- ordered(x$A,levels=c('低','中','高'))
+copy <- x
+prepared <- prepare_df(x)
+stopifnot(identical(x,copy),!is.ordered(prepared$A),nlevels(prepared$A)==3)
+bad <- x;bad$B[1] <- NA;expect_error(prepare_df(bad))
+bad <- x;bad$B[1] <- '不明';expect_error(prepare_df(bad))
+bad <- x;names(bad)<-c('重複','重複');expect_error(prepare_df(bad))
+bad <- x;bad$B <- '高';expect_error(prepare_df(bad))
+# 未観測親条件でMLEがNaNになる場合を、成功扱いしないことを検査。
+sparse <- data.frame(A=rep(c('低','中','高'),4),B=rep(c('低','中','高'),4),C=rep(c('高','低','中'),4))
+sparse <- prepare_df(sparse)
+g <- empty.graph(names(sparse));g<-set.arc(g,'A','C');g<-set.arc(g,'B','C')
+mle <- fit_parameters(g,sparse,'mle',NA)
+stopifnot(!check_cpt(mle),evaluate_fit(mle,sparse)$status=='unidentifiable_CPT')
+bayes <- fit_parameters(g,sparse,'bayes',10)
+stopifnot(check_cpt(bayes))
+cpt <- cpt_details(g,bayes,sparse,10)
+stopifnot(any(cpt$n_context==0),all(cpt$lower<=cpt$probability),all(cpt$probability<=cpt$upper))
+context_sums<-aggregate(probability~variable+parent_state,cpt,sum)
+stopifnot(all(abs(context_sums$probability-1)<1e-8),identical(sort(unique(cpt$state)),sort(c('低','中','高'))))
+# 保存済み実験の反復数・失敗理由・3状態を検査。
+cv<-read.csv('results/cv_detail.csv')
+stopifnot(nrow(cv)==5*5*3*4,all(cv$status %in% c('ok','zero_probability')))
+cp<-read.csv('results/CPT_all_three_states.csv')
+stopifnot(all(table(cp$variable,cp$state)>0))
+boot<-read.csv('results/bootstrap_detail.csv')
+stopifnot(nrow(boot)==choose(5,2)*2*3)
+cat('PASS: 入力検査・df保持・3状態CPT・未観測条件・CV記録・Bootstrap回数\n')
