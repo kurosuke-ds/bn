@@ -1,0 +1,7 @@
+"algorithm","seed","automatic_threshold"
+"hc",101,0.637
+"hc",202,0.647
+"hc",303,0.286
+"tabu",101,1
+"tabu",202,0.129
+"tabu",303,1

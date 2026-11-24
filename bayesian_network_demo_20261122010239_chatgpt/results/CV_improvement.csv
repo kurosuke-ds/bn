@@ -1,0 +1,9 @@
+"algorithm","method","mean_improvement","positive_run_fraction"
+"HC_BIC","Bayes1",0.958574841233636,1
+"HC_BDeu","Bayes10",0.958658629914565,1
+"HC_BIC","Bayes10",0.958658629914565,1
+"Independent","Bayes10",0,0
+"MMHC","Bayes10",0.956552835182489,1
+"Tabu","Bayes10",0.95878350074027,1
+"HC_BIC","Bayes100",0.951879546443059,1
+"HC_BIC","MLE",0.95854501177536,1

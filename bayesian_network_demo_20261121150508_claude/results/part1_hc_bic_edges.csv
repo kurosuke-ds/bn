@@ -1,0 +1,6 @@
+"from","to","strength"
+"WetGrass","Slippery",-708.615285067468
+"Cloudy","Rain",-500.763685160777
+"Rain","WetGrass",-700.619197566104
+"Sprinkler","WetGrass",-400.92862539498
+"Cloudy","Sprinkler",-271.138971735638

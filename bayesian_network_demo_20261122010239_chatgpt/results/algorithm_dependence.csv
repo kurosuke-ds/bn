@@ -1,0 +1,11 @@
+"from","to","strength_hc","strength_tabu","algorithm_gap"
+"Rain","Sprinkler",0.645666666666667,0.127,0.518666666666667
+"Cloudy","WetGrass",0.272666666666667,0.000333333333333333,0.272333333333333
+"Rain","Slippery",0.003,0.005,0.002
+"Slippery","Sprinkler",0.00466666666666667,0.00666666666666667,0.002
+"Cloudy","Slippery",0.001,0.00166666666666667,0.000666666666666667
+"Cloudy","Rain",1,1,0
+"Cloudy","Sprinkler",1,1,0
+"Rain","WetGrass",1,1,0
+"Slippery","WetGrass",1,1,0
+"Sprinkler","WetGrass",1,1,0

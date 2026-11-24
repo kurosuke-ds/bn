@@ -1,0 +1,8 @@
+{
+  "source_notebook": "/Users/user01/agent_dir/bayesian_network_demo_20261122010239_chatgpt/bayesian_network_demo_20261122010239_chatgpt.ipynb",
+  "inputs": {
+    "develop.csv": "1e61f0d84ad3b08f51234d263196feda3e216cdc55897b635497b87aa231a0c2",
+    "validation.csv": "c236de554239fd569b11b357638e435e53496bcc2554ce9fba85fc25f3391a3f"
+  },
+  "date": "2026-11-22T16:04:57.031115+09:00"
+}

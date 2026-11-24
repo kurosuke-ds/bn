@@ -1,0 +1,6 @@
+"check","result"
+"Probability validity","passed numerical check"
+"Repeated CV vs independent","7 configurations improved in every split"
+"CPT precision example","0 contexts exceed demo width 0.20"
+"Finite bootstrap precision","within configured MC target"
+"Business acceptability","not determined: minimum improvement/cost not specified"

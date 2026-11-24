@@ -1,0 +1,6 @@
+"from","to"
+"WetGrass","Slippery"
+"Cloudy","Rain"
+"Rain","WetGrass"
+"Sprinkler","WetGrass"
+"Cloudy","Sprinkler"
