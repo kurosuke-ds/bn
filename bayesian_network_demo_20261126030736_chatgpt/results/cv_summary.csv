@@ -1,0 +1,13 @@
+﻿method,algorithm,failures,nll
+complete_case,HC_BDeu,0,4.362831204490883
+complete_case,HC_BIC,0,4.385544166930518
+complete_case,Independent,0,5.426486511511893
+complete_case,PC,0,4.366331485814581
+mode,HC_BDeu,0,4.41617850855558
+mode,HC_BIC,0,4.441026056087929
+mode,Independent,0,5.453243697196425
+mode,PC,0,4.413118590474636
+random_marginal,HC_BDeu,0,4.417946646947232
+random_marginal,HC_BIC,0,4.431819957462648
+random_marginal,Independent,0,5.429285911505761
+random_marginal,PC,0,4.434715079937814

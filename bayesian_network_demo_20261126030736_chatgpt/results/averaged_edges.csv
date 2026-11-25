@@ -1,0 +1,5 @@
+﻿a,b,strength,orientation,conflicts_with_preference
+サービス品質,対応速度,1.0,reference_topological_order,False
+サービス品質,満足度,1.0,reference_topological_order,False
+価格納得感,満足度,0.9983333333333333,reference_topological_order,False
+満足度,継続意向,1.0,reference_topological_order,False

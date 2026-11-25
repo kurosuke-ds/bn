@@ -1,0 +1,7 @@
+﻿a,b,SHD,skeleton_difference,markov_equivalent
+HC_BIC,HC_BDeu,0,0,True
+HC_BIC,PC,0,0,True
+HC_BIC,Independent,4,4,False
+HC_BDeu,PC,0,0,True
+HC_BDeu,Independent,4,4,False
+PC,Independent,4,4,False
