@@ -1,0 +1,13 @@
+﻿algorithm,threshold,retained_pairs
+HC_BDeu,0.8,4
+HC_BDeu,0.85,4
+HC_BDeu,0.9,4
+HC_BDeu,0.95,4
+HC_BIC,0.8,4
+HC_BIC,0.85,4
+HC_BIC,0.9,4
+HC_BIC,0.95,4
+PC,0.8,5
+PC,0.85,5
+PC,0.9,4
+PC,0.95,4

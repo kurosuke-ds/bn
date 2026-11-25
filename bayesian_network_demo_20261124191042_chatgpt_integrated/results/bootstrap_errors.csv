@@ -1,0 +1,5 @@
+﻿algorithm,seed,repetition,error
+PC,101,217,Graph contains a cycle or graph changed during iteration
+PC,202,56,Graph contains a cycle or graph changed during iteration
+PC,303,112,Graph contains a cycle or graph changed during iteration
+PC,303,175,Graph contains a cycle or graph changed during iteration
