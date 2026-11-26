@@ -1,5 +1,0 @@
-# 高中低のdfを入力にするR/bnlearn分析
-
-bayesian_network_demo_20261124185018_chatgpt.ipynbをR (bn)で全セル実行。dfが存在しない場合のみサンプル1,200行×5列を生成。既存dfがあるときは変更せず使用。実処理はbn_functions.R、実行順はNotebook、Rスクリプト版はrun_analysis.Rです。同じフォルダを作業ディレクトリにしてください。
-
-設定はNotebook第1節に集約。CVのrun→fold→algorithm→parameterループはbn_functions.Rのrun_cv()。Bootstrapも手法→seedの順です。エラーや警告は結果表に残し、失敗候補の平均はNAにします。実行済み出力は人工データの例です。
