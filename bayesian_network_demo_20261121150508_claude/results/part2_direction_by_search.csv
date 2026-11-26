@@ -1,7 +1,0 @@
-"edge","hc_shuffle_strength","hc_shuffle_direction","hc_fixed_strength","hc_fixed_direction","tabu_strength","tabu_direction"
-"Cloudy → Rain",1,0.5,1,0.5,1,0.5
-"Cloudy → Sprinkler",1,0.5,1,0.5,1,0.5
-"Rain → WetGrass",1,0.675,1,0.9475,1,0.9475
-"Sprinkler → WetGrass",1,0.675,1,0.9475,1,0.9475
-"WetGrass → Slippery",1,0.675,1,0.9475,1,0.9475
-"Rain → Sprinkler",0.65,0.5,0.105,0.5,0.105,0.5
